@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container, .produtos, .nome-produtos, .container-grid {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    padding-top: 16px;
+    color: black;
+    border-bottom: 3px solid red;
+}
+header > .container,
+section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+}
+section {
+    padding: 24px 0;
+}
+section .container {
+    align-items: flex-start;
+}
+nav {
+    padding: 16px 0;
+}
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav li a {
+    color: black;
+    text-decoration: none;
+}
+.img-loja {
+    margin-right: 16px;
+    width: 50%;
+}
+.about {
+    color: black;
+}
+.about h2 {
+    margin-bottom: 16px;
+    font-size: 28px;
+}
+.about p {
+    margin-bottom: 8px;
+}
+section h2 {
+    font-size: 32px;
+}
+#borda {
+    border-bottom: 3px solid red;
+}
+.produtos img {
+    max-width: 100%;
+}
+.nome-produtos {
+    padding-bottom: 10px;
+}
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.nome-produtos {
+    padding-bottom: 16px;
+    color: black;
+}
+button {
+    font-size: 17px;
+    color: #fff;
+    background-color: black;
+    border-style: none;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+@media  screen  and (max-width: 767px) {
+    header > .container,
+    section .container {
+        display: block;
+    }
+    .container, .produtos, .nome-produtos .container-grid{
+        max-width: 90%;
+    }
+    .container-grid {
+        display: block;
+    }
+    nav {
+        padding: 16px 0;
+        text-align: center;
+    }
+    nav li {
+        list-style: none;
+        display: inline;
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    nav li a {
+        color: black;
+        text-decoration: none;
+    }
+    h1 {
+        text-align: center;
+        padding: 10px 0;
+    }
+    .img-loja {
+        width: 100%;
+    }
+    .about p {
+        font-size: 17px;
+        text-align: justify;
+    }
+    .about h2 {
+        font-size: 28px;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .nome-produtos {
+        padding-bottom: 10px;
+    }
+    .produtos {
+        display: block
+    }
+    .nome-produtos {
+        padding-bottom: 16px;
+    } 
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1%;
+    }
+    .nome-produtos h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .produto {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .container, .produtos, .nome-produtos, .container-grid {
+        max-width: 90%;
+    }
+    nav {
+        padding: 13px 0;
+    }
+    nav li {
+        list-style: none;
+        display: inline;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    nav li a {
+        color: black;
+        text-decoration: none;
+    }
+    h1 {
+        padding: 10px 0;
+    }
+    .img-loja {
+        width: 50%;
+    }  
+    .about {
+        color: black;
+    }
+    .about h2 {
+        margin-bottom: 16px;
+        font-size: 25px;
+    }
+    .about p {
+        margin-bottom: 8px;
+    }
+    .nome-produtos {
+        padding-bottom: 10px;
+    }
+    .nome-produtos h2 {
+        font-size: 30px;
+    }
+    .produtos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .nome-produtos {
+        padding-bottom: 16px;
+        color: black;
+    }
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1%;
+    }
+    .produto {
+        margin-bottom: 32px;
+    }
+}
+
